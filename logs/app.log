@@ -1,0 +1,12 @@
+[GIN-debug] GET    /playlist/:q              --> spotify-track-echo/internal/handlers.HandlePlaylist (4 handlers)
+[GIN-debug] GET    /album/:q                 --> spotify-track-echo/internal/handlers.HandleAlbum (4 handlers)
+[GIN-debug] GET    /track/:q                 --> spotify-track-echo/internal/handlers.HandleTrack (4 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+::1 - [Wed, 13 Mar 2024 00:19:28 +05] "GET /album/:q=2gNPnKP1PDkB5SZz3IMKuX?si=zoQS807CQ1edvFOqqvfTwg HTTP/1.1 202 252.988208ms "PostmanRuntime/7.37.0" "
+::1 - [Wed, 13 Mar 2024 00:19:48 +05] "GET /album/:q2gNPnKP1PDkB5SZz3IMKuX?si=zoQS807CQ1edvFOqqvfTwg HTTP/1.1 202 116.240375ms "PostmanRuntime/7.37.0" "
+::1 - [Wed, 13 Mar 2024 00:19:52 +05] "GET /album/:q/2gNPnKP1PDkB5SZz3IMKuX?si=zoQS807CQ1edvFOqqvfTwg HTTP/1.1 404 125ns "PostmanRuntime/7.37.0" "
+::1 - [Wed, 13 Mar 2024 00:20:03 +05] "GET /album/:q=2gNPnKP1PDkB5SZz3IMKuX HTTP/1.1 202 113.707542ms "PostmanRuntime/7.37.0" "
+::1 - [Wed, 13 Mar 2024 00:20:59 +05] "GET /album/2gNPnKP1PDkB5SZz3IMKuX HTTP/1.1 200 690.392083ms "PostmanRuntime/7.37.0" "
