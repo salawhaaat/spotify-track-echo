@@ -1,8 +1,6 @@
 package utils
 
 import (
-	"fmt"
-
 	"github.com/zmb3/spotify"
 )
 
@@ -21,7 +19,6 @@ func GetPlaylist(url string, client *spotify.Client) (tracks []string, err error
 func GetAlbum(url string, client *spotify.Client) ([]string, error) {
 	var tracks []string
 	playlist, err := client.GetAlbum(spotify.ID(url))
-	fmt.Println(playlist)
 	if err != nil {
 		return nil, err
 	}

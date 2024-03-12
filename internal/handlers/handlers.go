@@ -20,7 +20,7 @@ func HandleAlbum(ctx *gin.Context) {
 		ctx.JSON(http.StatusAccepted, gin.H{"err": err.Error()})
 		return
 	}
-	ctx.JSON(http.StatusOK, gin.H{"tracks": tracks})
+	ctx.JSON(http.StatusOK, tracks)
 }
 
 func HandlePlaylist(ctx *gin.Context) {
@@ -34,7 +34,7 @@ func HandlePlaylist(ctx *gin.Context) {
 		ctx.JSON(http.StatusAccepted, gin.H{"err": err.Error()})
 		return
 	}
-	ctx.JSON(http.StatusOK, gin.H{"tracks": tracks})
+	ctx.JSON(http.StatusOK, tracks)
 }
 
 func HandleTrack(ctx *gin.Context) {
@@ -49,6 +49,5 @@ func HandleTrack(ctx *gin.Context) {
 		ctx.JSON(http.StatusAccepted, gin.H{"err": err.Error()})
 		return
 	}
-
-	ctx.JSON(http.StatusOK, gin.H{"track": track})
+	ctx.JSON(http.StatusOK, track)
 }
